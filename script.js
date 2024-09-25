@@ -10,3 +10,50 @@ function addListener()
 	document.getElementById("BtnClr").addEventListener("click",ClearInp);
 	
 }
+
+function Addition()
+{
+    var Number1 = document.getElementById("Number1Input");
+    var Number2 = document.getElementById("Number2Input");
+    num1 = Number1.value;
+    num2 = Number2.value;
+    sum = parseInt(num1) + parseInt(num2);
+    var result = document.getElementById("inpResult").textContent;
+}
+
+function Subtraction()
+{
+    var Number1 = document.getElementById("Number1Input");
+    var Number2 = document.getElementById("Number2Input");
+    num1 = Number1.value;
+    num2 = Number2.value;
+    sum = parseInt(num1) - parseInt(num2);
+    var result = document.getElementById("inpResult").textContent;
+}
+
+function Multiplication()
+{
+    var Number1 = document.getElementById("Number1Input");
+    var Number2 = document.getElementById("Number2Input");
+    num1 = Number1.value;
+    num2 = Number2.value;
+    sum = parseInt(num1) * parseInt(num2);
+    var result = document.getElementById("inpResult").textContent;
+}
+
+function Division()
+{
+    var Number1 = document.getElementById("Number1Input");
+    var Number2 = document.getElementById("Number2Input");
+    num1 = Number1.value;
+    num2 = Number2.value;
+    sum = parseInt(num1) / parseInt(num2);
+    var result = document.getElementById("inpResult").textContent;
+}
+
+function ClearInp()
+{
+    document.getElementById("Number1Input").value = '';
+    document.getElementById("Number2Input").value = '';
+    document.getElementById("Number1Input").focus();
+}
