@@ -4,9 +4,9 @@ function addListener()
 {
 	document.getElementById("inpResult").disabled = true;
 	document.getElementById("BtnAdd").addEventListener("click",Addition);
-	document.getElementById("BtnSub").addEventListener("click",Addition);
-	document.getElementById("BtnMul").addEventListener("click",Addition);
-	document.getElementById("BtnDiv").addEventListener("click",Addition);
-	document.getElementById("BtnClr").addEventListener("click",Addition);
+	document.getElementById("BtnSub").addEventListener("click",Subtraction);
+	document.getElementById("BtnMul").addEventListener("click",Multiplication);
+	document.getElementById("BtnDiv").addEventListener("click",Division);
+	document.getElementById("BtnClr").addEventListener("click",ClearInp);
 	
 }
