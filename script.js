@@ -2,7 +2,7 @@ window.addEventListener("load", addListener);
 
 function addListener()
 {
-	document.getElementById("inpResult").disabled = true;
+	document.getElementById("InputResult").disabled = true;
 	document.getElementById("BtnAdd").addEventListener("click",Addition);
 	document.getElementById("BtnSub").addEventListener("click",Subtraction);
 	document.getElementById("BtnMul").addEventListener("click",Multiplication);
@@ -18,7 +18,7 @@ function Addition()
     num1 = Number1.value;
     num2 = Number2.value;
     sum = parseInt(num1) + parseInt(num2);
-    var result = document.getElementById("inpResult").textContent;
+    var result = document.getElementById("InputResult").value = sum;
 }
 
 function Subtraction()
@@ -27,8 +27,8 @@ function Subtraction()
     var Number2 = document.getElementById("Number2Input");
     num1 = Number1.value;
     num2 = Number2.value;
-    sum = parseInt(num1) - parseInt(num2);
-    var result = document.getElementById("inpResult").textContent;
+    difference = parseInt(num1) - parseInt(num2);
+    var result = document.getElementById("InputResult").value = difference;
 }
 
 function Multiplication()
@@ -37,8 +37,8 @@ function Multiplication()
     var Number2 = document.getElementById("Number2Input");
     num1 = Number1.value;
     num2 = Number2.value;
-    sum = parseInt(num1) * parseInt(num2);
-    var result = document.getElementById("inpResult").textContent;
+    product = parseInt(num1) * parseInt(num2);
+    var result = document.getElementById("InputResult").value = product;
 }
 
 function Division()
@@ -47,13 +47,14 @@ function Division()
     var Number2 = document.getElementById("Number2Input");
     num1 = Number1.value;
     num2 = Number2.value;
-    sum = parseInt(num1) / parseInt(num2);
-    var result = document.getElementById("inpResult").textContent;
+    quotient = parseInt(num1) / parseInt(num2);
+    var result = document.getElementById("InputResult").value = quotient;
 }
 
 function ClearInp()
 {
     document.getElementById("Number1Input").value = '';
     document.getElementById("Number2Input").value = '';
+    document.getElementById("InputResult").value = '';
     document.getElementById("Number1Input").focus();
 }
