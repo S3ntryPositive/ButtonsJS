@@ -1,1 +1,10 @@
+body
+{
+    background-color: black;
+}
 
+label
+{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+}
